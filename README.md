@@ -16,3 +16,9 @@ cargo install wasm-bindgen-cli
 nix-shell
 trunk serve
 ```
+
+## Signing commit
+
+```
+nix-shell -p gnupg
+```
