@@ -1,4 +1,5 @@
 use yew::prelude::*;
+mod drawing_canvas;
 
 enum Msg {
     AddOne,
@@ -33,6 +34,7 @@ impl Component for Model {
             <div>
                 <button onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
                 <p>{ self.value }</p>
+                <drawing_canvas::DrawingCanvas />
             </div>
         }
     }
